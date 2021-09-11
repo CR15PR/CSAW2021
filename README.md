@@ -7,8 +7,8 @@
 | [Poem Collection](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/poem-collection) | warm-up |
 | [Turing](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/Turing) | warm-up |
 | [Password Checker](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/Password_Checker) | warm-up |
-| [challenge name](challenge link) | category |
-| [challenge name](challenge link) | category |
+| [checker](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/checker) | warm-up |
+| [Weak Password](https://github.com/CR15PR/CSAW2021/tree/main/misc/Weak_password) | misc |
 | [challenge name](challenge link) | category |
 | [challenge name](challenge link) | category |
 | [challenge name](challenge link) | category |
