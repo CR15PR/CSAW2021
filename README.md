@@ -6,7 +6,7 @@
 | [Lazy Leaks](https://github.com/CR15PR/CSAW2021/tree/main/forensics/Lazy_Leaks) | Forensics |
 | [Poem Collection](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/poem-collection) | warm-up |
 | [Turing](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/Turing) | warm-up |
-| [Password Checker](challenge link) | warm-up |
+| [Password Checker](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/Password-Checker) | warm-up |
 | [challenge name](challenge link) | category |
 | [challenge name](challenge link) | category |
 | [challenge name](challenge link) | category |
