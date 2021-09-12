@@ -14,7 +14,7 @@
 | [Alien Math](https://github.com/CR15PR/CSAW2021/tree/main/pwn/Alien_math) | pwn | dancing.pickle |
 | mic | forensics | dancing.pickle |
 | Contact Us | forensics | dancing.pickle |
-| Crack Me | warm-up | root2thrill |
+| [Crack Me](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/Crack_me) | warm-up | root2thrill |
 | [challenge name](challenge link) | category | name |
 | [challenge name](challenge link) | category | name |
 | [challenge name](challenge link) | category | name |
