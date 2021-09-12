@@ -17,6 +17,7 @@
 | [Crack Me](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/Crack_me) | warm-up | root2thrill |
 
 ![stats](stats.png)
-Notes:
+Notes: <br>
 
+Overall we placed 211th of 1216 teams with 1+ points.  We competed as a duo (myself M-Pepper) and we were strong on forensics and stego, but weak on web, reversing, and pwn.  I felt like with more time we could have done better on a couple of the RSA problems.  Infrastructure was a bit unstable at times, but we still learned a lot and are grateful to participate in CSAW 2021
 
