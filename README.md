@@ -10,7 +10,7 @@
 | [checker](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/checker) | warm-up | root2thrill |
 | [Weak Password](https://github.com/CR15PR/CSAW2021/tree/main/misc/Weak_password) | misc | root2thrill |
 | [Sonicgraphy Fallout](https://github.com/CR15PR/CSAW2021/tree/main/forensics/Sonicgraphy_fallout) | Forensics | root2thrill |
-| [a pain in the BAC(net)](https://github.com/CR15PR/CSAW2021/tree/main/ics/A_Pain_in_the_BAC{Bnet)) | ics | root2thrill |
+| [a pain in the BAC(net)](https://github.com/CR15PR/CSAW2021/tree/main/ics/A_Pain_in_the_BAC{net)) | ics | root2thrill |
 | [Alien Math](https://github.com/CR15PR/CSAW2021/tree/main/pwn/Alien_math) | pwn | dancing.pickle |
 | [mic](https://github.com/CR15PR/CSAW2021/tree/main/forensics/mic) | forensics | dancing.pickle |
 | [Contact Us](https://github.com/CR15PR/CSAW2021/tree/main/forensics/Contact_Us) | forensics | dancing.pickle |
