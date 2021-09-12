@@ -5,7 +5,11 @@
 
 `Password_checker` executes a string comparison to a hard coded value then returns. However it uses `gets` and reads an arbitray amount of data.
 
-![pic](2021-09-12_13-30.png) ![pic](2021-09-12_13-33.png)
+![pic](2021-09-12_13-30.png) 
+
+GDB-GEF disass of `password_checker`:
+
+![pic](2021-09-12_13-33.png)
 
 Ghidra shows the buffer size of local_48 as 60. While 61 bytes will overflow the buffer there is still some distance to `$rip`. Through testing it is found that the total offset to `$rip` is 72.
 
@@ -27,7 +31,7 @@ Through manual `demsg` inspection I found there was 2 extra byts of padding to e
 
 From here we control `$rip` and write out the next 8 bytes as the location of `back_door`: 0x0000000000401172
 
-Our final payload looks like this:
+Our final [payload](https://github.com/CR15PR/CSAW2021/blob/main/warm-up/Password_Checker/solver.py) looks like this:
   ```back_door = p64(password_elf.symbols.backdoor)
   OFFSET = 72
   junk = b"A" * OFFSET
