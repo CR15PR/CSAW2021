@@ -12,10 +12,10 @@
 | [Sonicgraphy Fallout](https://github.com/CR15PR/CSAW2021/tree/main/forensics/Sonicgraphy_fallout) | Forensics | root2thrill |
 | [a pain in the BAC(net)](https://github.com/CR15PR/CSAW2021/tree/main/ics/A_Pain_in_the_BAC%7Bnet) | ics | root2thrill |
 | [Alien Math](https://github.com/CR15PR/CSAW2021/tree/main/pwn/Alien_math) | pwn | dancing.pickle |
-| mic | forensics | dancing.pickle |
-| Contact Us | forensics | dancing.pickle |
+| [mic](https://github.com/CR15PR/CSAW2021/tree/main/forensics/mic) | forensics | dancing.pickle |
+| [Contact Us](https://github.com/CR15PR/CSAW2021/tree/main/forensics/Contact_Us) | forensics | dancing.pickle |
 | [Crack Me](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/Crack_me) | warm-up | root2thrill |
 | [challenge name](challenge link) | category | name |
 | [challenge name](challenge link) | category | name |
-| [challenge name](challenge link) | category | name |
+| [challenge name](challenge link) | category | na)me |
 | [challenge name](challenge link) | category | name |
