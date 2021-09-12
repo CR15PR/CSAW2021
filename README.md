@@ -14,4 +14,8 @@
 | [Alien Math](https://github.com/CR15PR/CSAW2021/tree/main/pwn/Alien_math) | pwn |
 | mic | forensics |
 | Contact Us | forensics |
+| Crack Me | warm-up |
+| [challenge name](challenge link) | category |
+| [challenge name](challenge link) | category |
+| [challenge name](challenge link) | category |
 | [challenge name](challenge link) | category |
