@@ -9,7 +9,7 @@ nums = [7,7,5,9,4,0,6,4,8,5,2,5,5,3,2,3,2,2,9,2,2,5] # this is the number we nee
 def transformation(param1, param2):
     x = param1
     y = param2
-    return ((x -48) * 48 + (y - 48) * 11 - 4) % 10
+    return ((x - 48) * 48 + (y - 48) * 11 - 4) % 10
 
 
 for i in range(len(nums)-1):
