@@ -26,6 +26,7 @@ while True:
         leak = p.recvuntil("Genius! One question left...\n")
         log.info(f"{leak = }")
         if b"\nGenius!" in leak:
+            False
             payload = [
                 junk,
                 printFlag,
