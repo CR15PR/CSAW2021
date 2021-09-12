@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-from socket import recv_fds
 from pwn import *
 
 LOCAL = False
