@@ -1,5 +1,5 @@
 # Password_Checker
-The goal of this challenge is to get a shell on a remote system and cat the flag.txt file. This is done through a standard b0f through the vulnerable `gets` function control execution flow in order to call `back_door`.
+The goal of this challenge is to get a shell on a remote system and cat the flag.txt file. This is done through a standard b0f through the vulnerable `gets` function that will allow us to control execution flow in order to call `back_door`.
 
 `Main` is a fairly boring function that only calls `init` and `password_checker` then returns.
 
