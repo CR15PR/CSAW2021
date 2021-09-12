@@ -29,7 +29,7 @@ Query the offset in 8 byte chunks: `! python3 -c "import pwn; print(pwn.cyclic_f
 
 The beginning of `$rbp` is 62 + 8 bytes for the length of `$rbp` to equel 70
 
-Through manual `demsg` inspection I found there was 2 extra byts of padding to equal a total of 72 bytes as the offset
+Through manual `demsg` inspection I found there was 2 extra bytes of padding to equal a total of 72 bytes as the offset
 
 From here we control `$rip` and write out the next 8 bytes as the location of `back_door`: 0x0000000000401172
 
