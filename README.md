@@ -10,7 +10,7 @@
 | [checker](https://github.com/CR15PR/CSAW2021/tree/main/warm-up/checker) | warm-up |
 | [Weak Password](https://github.com/CR15PR/CSAW2021/tree/main/misc/Weak_password) | misc |
 | [Sonicgraphy Fallout](https://github.com/CR15PR/CSAW2021/tree/main/forensics/Sonicgraphy_fallout) | Forensics |
-| [a pain in the BAC(net)](https://github.com/CR15PR/CSAW2021/tree/main/ics/A_Pain_in_the_BAC%7Bnet)) | ics |
+| [a pain in the BAC(net)](https://github.com/CR15PR/CSAW2021/tree/main/ics/A_Pain_in_the_BAC%7Bnet) | ics |
 | [challenge name](challenge link) | category |
 | [challenge name](challenge link) | category |
 | [challenge name](challenge link) | category |
