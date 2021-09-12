@@ -12,6 +12,6 @@
 | [Sonicgraphy Fallout](https://github.com/CR15PR/CSAW2021/tree/main/forensics/Sonicgraphy_fallout) | Forensics |
 | [a pain in the BAC(net)](https://github.com/CR15PR/CSAW2021/tree/main/ics/A_Pain_in_the_BAC%7Bnet) | ics |
 | [Alien Math](https://github.com/CR15PR/CSAW2021/tree/main/pwn/Alien_math) | pwn |
-| [challenge name](challenge link) | category |
-| [challenge name](challenge link) | category |
+| mic | forensics |
+| Contact Us | forensics |
 | [challenge name](challenge link) | category |
