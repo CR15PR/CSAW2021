@@ -1,4 +1,9 @@
 #!/usr/bin/python3
+#
+# Not my function! written by a1ex.t / EvilBunnyWrote
+# Borrowed from: https://ctftime.org/writeup/30222
+#
+##################
 
 from z3 import *
 
