@@ -46,6 +46,7 @@ User input is stored in `$rsi` so using this breakpoint you can character by cha
       7856445899213065428791 - 7759406485255323229225
 
 We can confirm our correct value again at `second_question+358`:
+
 ![pic](https://github.com/CR15PR/CSAW2021/blob/main/pwn/Alien_math/alien-math-rdi-rsi.png)
 
 After this `final_question` is called and we find the vulnerable `gets` fucntion. This is a standard b0f that allows us to control `$rip` in order to call the `print_flag` function.
