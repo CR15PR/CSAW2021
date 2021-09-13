@@ -2,18 +2,27 @@
 
 from z3 import *
 
-nums = [7,7,5,9,4,0,6,4,8,5,2,5,5,3,2,3,2,2,9,2,2,5] # this is the number we need to compare to and match to proceed. But if this number is the input it goes through this transformation and gets mangled.
+def second():
+    solver = z3.Solver()
 
-#once we figure out how to represent the transformation in the C code the z3 library can produce the required inputs based on the known output and constraints
+    chars = z3.BitVecs(''.join((f'd{d:02} ' for d in range(len(expected)-1))), 32)
+    for ch in chars:
+        solver.add(ch > 47, ch <= 57)
 
-def transformation(param1, param2):
-    x = param1
-    y = param2
-    return ((x - 48) * 48 + (y - 48) * 11 - 4) % 10
+    an = chars[0]
+    for i in range(len(chars)- 1):
+        v1 = chars[i + 1] - ord('0')
 
+        an = ((v1 + fn(an, i + an)) % 10) + ord('0')
+        solver.add(an == expected[i+1])
 
-for i in range(len(nums)-1):
-    x = i + 1
-    y = transformation(nums[i], nums[i]+i)
-    y = x - 48 + y
-    nums[i+1] = y + (y/2) * -10 + '0'
+    solver.add(chars[0] == ord('7'))
+    assert solver.check() == z3.sat
+    rv = ''
+    for i in range(len(chars)):
+        rv += chr(solver.model()[chars[i]].as_long())
+    print(rv)
+    return rv
+
+print('finding the second challenge answer...')
+enter2 = second().encode() #  b'7856445899213065428791'
