@@ -1,6 +1,6 @@
 The objetive of this challenge is to find the message Veronica sent via an online contact us form to one of her clients. You are given a .pcap file and a TLS (Pre)-Master-Secret log that contains the TLS keys needed to decrypt some of the content.
 
-Importing the keys can be done by going to wireshark preferences, protocols, then TLS. Upload the file; then enable the `Reassemble out-of-order segments` option under the TCP.
+Importing the keys can be done by going to wireshark preferences, protocols, then TLS. Upload the file; then enable the `Reassemble out-of-order segments` option under the TCP section.
 
 Wireshark is now configured to decrypt TLS data. 
 
