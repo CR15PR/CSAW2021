@@ -8,7 +8,7 @@ Main takes user input from `__isoc99_scanf` and string formats it to a decimal n
 `$rax` is compared to `$rbp-0x8` so we examine this offset on the stack: `x/gx $rbp-0x8` and we get `0x7fffffffdcf8:	0x000000006b8b4567` or 1804289383 in decimal.
 
            
- 
+      ```c
       int main(void)
 
       {
@@ -37,7 +37,7 @@ Main takes user input from `__isoc99_scanf` and string formats it to a decimal n
           puts("Incorrect. That\'s an F for you!");
         }
         return 0;
-      }
+      }```
 
 After this `__isoc99_scanf` is called again and our input is formated to a max of 24 characters as a string. Our input is then put passed into the `second_question` function
 
