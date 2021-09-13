@@ -22,7 +22,7 @@ Again we have two options; we can either model the function in python and use Mi
 
 User input is stored in `$rsi` so using this breakpoint you can character by character observe the changes to yield the correct result:
 
-  ``` 7 - 7
+      7 - 7
       78 - 77
       785 - 775 
       7856 - 7759
@@ -45,4 +45,14 @@ User input is stored in `$rsi` so using this breakpoint you can character by cha
       785644589921306542879 - 775940648525532322922
       7856445899213065428791 - 7759406485255323229225
 
+We can confirm our correct value again at `second_question+358`:
+![pic](https://github.com/CR15PR/CSAW2021/blob/main/pwn/Alien_math/alien-math-rdi-rsi.png)
 
+After this `final_question` is called and we find the vulnerable `gets` fucntion. This is a standard b0f that allows us to control `$rip` in order to call the `print_flag` function.
+
+Using `! python3 -c "import pwn; print(pwn.cyclic(100, n=8))" > cyclic` we determine the offset to get a SIGSEV is 24. We use pwntools amazing abstraction ability to find the location of the print_flag symbol and pack it little endien compliant: `printFlag = p64(math_elf.symbols.print_flag)`.
+
+We then send our [payload](https://github.com/CR15PR/CSAW2021/blob/main/pwn/Alien_math/solver.py) and get our flag.
+
+    Here is your flag: 
+    flag{w3fL15n1Rx!_y0u_r34lLy4R3@_fL1rBg@rpL3_m4573R!}
