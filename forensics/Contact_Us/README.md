@@ -10,7 +10,8 @@ Our method of attack was to filter by all streams and exclude them manually. To 
 By manually inspection and excluding streams we eventually find the following JSON data in TCP Stream 46:
 ![pic](https://github.com/CR15PR/CSAW2021/blob/main/forensics/Contact_Us/2021-09-11_22-32_1.png)
 
-Upon inspection we are greeted with Veronica's message to her client: flag{m@r$hm3ll0w$}
+Upon inspection we are greeted with Veronica's message to her client: `flag{m@r$hm3ll0w$}`
+
 ![pic](https://github.com/CR15PR/CSAW2021/blob/main/forensics/Contact_Us/2021-09-11_22-32.png)
 
 ## Tshark
