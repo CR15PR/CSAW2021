@@ -1,6 +1,6 @@
 ## deda_gui
 
-The objective of this challenge is to find the hidden message in the blank pdf files. The first thing that should come to mind as these are scanned files and the authro of the challenge tells us that they were printed is MIC dots.
+The objective of this challenge is to find the hidden message in the blank pdf files. The first thing that should come to mind as these are scanned files and the author of the challenge tells us that they were printed, is MIC dots.
 A great tool for MIC analysis is [deda](https://pypi.org/project/deda/).
 
 `poppler-utils` is another great resource that can be used for pdf analysis and manipulation. 
