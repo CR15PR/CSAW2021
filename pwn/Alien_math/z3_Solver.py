@@ -7,6 +7,9 @@
 
 from z3 import *
 
+def fn(a, b):
+    return (12 * (b - ord('0')) - 4 + 48 * (a - ord('0')) - (b - ord('0'))) % 10
+
 def second():
     solver = z3.Solver()
 
