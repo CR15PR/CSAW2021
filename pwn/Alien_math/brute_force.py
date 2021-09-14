@@ -3,6 +3,7 @@
 # Not my script
 # Borrowed from https://github.com/apoirrier/CTFs-writeups/blob/master/CSAWQual2021/pwn/AlienMath.md
 #
+import ctypes
 
 goal = "7759406485255323229225"
 
