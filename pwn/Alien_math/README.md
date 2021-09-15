@@ -93,7 +93,7 @@ The transformation is compared against a static value of 7759406485255323229225.
 
 `b *second_question+358` then give some input and continue and `x/gx $rdi` which yields 7759406485255323229225.
 
-Again we have two options; we can either model the function in python and use Microsoft's z3 utilities to create the acceptable input or brute force the key character by character since the same input will always produce the same output.
+Again we have two options; we can either model the function in python and use [Microsoft's z3 utilities to create the acceptable input](https://github.com/CR15PR/CSAW2021/blob/main/pwn/Alien_math/z3_Solver.py) or [brute force the key](https://github.com/CR15PR/CSAW2021/blob/main/pwn/Alien_math/brute_force.py) character by character since the same input will always produce the same output.
 
 User input is stored in `$rsi` so using this breakpoint you can character by character observe the changes to yield the correct result:
 
